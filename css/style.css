@@ -1,0 +1,197 @@
+:root {
+    --turquoise: #00CED1;
+    --grapeFruit: #FF9F63;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-weight: 700;
+  }
+  
+  
+    .tooltip-inner {
+      background-color: var(--grapeFruit);
+      font-size: 1.6rem;
+      padding: 5px;
+    }
+  
+    .bs-tooltip-bottom .tooltip-arrow::before {
+      border-bottom-color: var(--grapeFruit);
+    }
+  
+    .bs-tooltip-end .tooltip-arrow::before {
+      border-right-color: var(--grapeFruit);
+    }
+  
+    .bs-tooltip-start .tooltip-arrow::before {
+      border-left-color: var(--grapeFruit);
+    }
+  
+    .bs-tooltip-top .tooltip-arrow::before {
+      border-top-color: var(--grapeFruit);
+    }
+  
+    .bs-tooltip-top    { margin: 0 0 30px 0 !important; }
+    .bs-tooltip-end { margin: 0 0 0 30px !important; }
+    .bs-tooltip-bottom { margin: 30px 0 0 0 !important; }
+    .bs-tooltip-start { margin: 0 30px 0 0 !important; }
+  
+
+    #navBar {
+      width: 100%;
+      overflow: hidden;
+      position: fixed;
+      z-index: 1;
+      transition: background-color 0.5s linear;
+    }
+  
+    .navbar-bg-scroll {
+      background-color: #000000;
+    }
+  
+    #navBar > div:nth-child(1) > .navbar-brand > img {
+      width: 30px;
+    }
+  
+    #navBar > div:nth-child(1) > .navbar-brand {
+      font-size: 2rem;
+    }
+
+    #carouselExampleControls {
+      height: 100vh;
+    }
+  
+    #carouselExampleControls img {
+      object-fit: cover;
+    }
+  
+    .carousel, .carousel-inner, .item, .active{
+      height:100%;
+    }
+  
+    .titleSections {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin: 10px 0 50px 0;
+    }
+  
+    #presentation > div:nth-child(2) > article > div {
+      background-color: var(--turquoise);
+      text-align: center;
+      padding: 5px 0;
+      margin: 10px 0;
+    }
+  
+    #featured > div > article > div {
+      height: 100%;
+      background-color: var(--turquoise);
+    }
+  
+    #featured > div > article > div .card-title {
+      font-size: 2rem;
+    }
+  
+    #featured > div > article > div .card-text {
+      margin-bottom: 15px;
+    }
+  
+    #featured > div > article > div > .cardImgContainer {
+      height: 200px;
+    }
+  
+    #featured > div > article > div > .cardImgContainer img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #contact > div button {
+      background-color: var(--turquoise);
+      color: white;
+    }
+
+    footer {
+      padding: 20px 0;
+      background-color: var(--turquoise);
+    }
+  
+    footer > div {
+      width: 70%;
+    }
+  
+    footer > div > div:nth-child(1) {
+      display: flex;
+      align-items: center;
+    }
+  
+    footer > div > div:nth-child(2) {
+      display: flex;
+      align-items: center;
+    }
+  
+    footer > div > div:nth-child(2) > ul {
+      margin-left: auto !important;
+    }
+  
+    footer > div:nth-child(1) > div > span {
+      font-weight: 700;
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+  
+    footer > div:nth-child(1) > div > ul > li {
+      margin: auto 10px;
+      display: inline;
+    }
+  
+    footer > div:nth-child(1) > div > ul > li > a > i {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 992px) {
+      #carouselExampleControls {
+        height: auto;
+      }
+  
+      footer > div {
+        width: 90%;
+      }
+  
+      footer > div > div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      footer > div > div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      footer > div > div:nth-child(2) > ul {
+        margin-left: 0 !important;
+      }
+    }
+  
+    @media (max-width: 1200px) {
+      footer > div {
+        width: 90%;
+      }
+    }
